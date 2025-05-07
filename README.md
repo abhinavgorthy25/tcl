@@ -8,3 +8,11 @@ The primary goal of this repository  is to develop an automation tool that takes
 - Convert all inputs to format [1] & SDC format, and pass to synthesis tool 'Yosys'
 - Convert format [1] & SDC to format [2] and pass to timing tool 'Opentimer'
 - Generate output report
+## SUB TASKS INVOLVED IN TASK 2 and 3: 
+- Create variables
+- Check if directories and files mentioned in .csv, exists or not
+- Read "Constraints File" for above .csv and convert to SDC format
+- Read all files in "Netlist Directory"
+- Create main synthesis script in format|2]
+- Pass this script to Yosys 
+
