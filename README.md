@@ -3,16 +3,68 @@ Tool Command Language (TCL) is a powerful scripting language widely used in the 
 
 The primary goal of this repository  is to develop an automation tool that takes a CSV input files containing paths and Standard Design Constraints (SDC) and generates a corresponding TCL script. This script will then be used for automating digital synthesis using Yosys, an open-source RTL synthesis tool for Verilog designs.
 
-## TASKS:
+## Module 1: Introduction and VSDSYNTH Toolbox Usage
+### TASKS:
 - Create command (for eg. vsdsynth) and pass csv from UNIX shell to TCL script
 - Convert all inputs to format [1] & SDC format, and pass to synthesis tool 'Yosys'
 - Convert format [1] & SDC to format [2] and pass to timing tool 'Opentimer'
 - Generate output report
-## SUB TASKS INVOLVED IN TASK 2 and 3: 
+### SUB TASKS INVOLVED IN TASK 2 and 3: 
 - Create variables
 - Check if directories and files mentioned in .csv, exists or not
 - Read "Constraints File" for above .csv and convert to SDC format
 - Read all files in "Netlist Directory"
 - Create main synthesis script in format|2]
 - Pass this script to Yosys 
+
+Instead of VSDSYNTH, I’ve created a name called “TCL_TOOL,” and I’ve also created an ASCII logo for it.
+![Screenshot 2025-05-07 at 10 21 46 PM](https://github.com/user-attachments/assets/d9b67388-e6c5-4bf7-8fb1-5c58fe04f88a)
+
+The following is used in the tcl_tool.tcl indicating that it is a UNIX Script. Make sure the files of tcl_tool (UNIX COMMANDS) and tcl_tool.tcl files are in the working directory and make sure the paths are proper. 
+
+
+```
+#!/bin/tcsh -f
+```
+In this scenario, the user does not enter the CSV file (no arguments) and executes only ./tcl_tool and -help as arguments.
+![Screenshot 2025-05-07 at 10 29 17 PM](https://github.com/user-attachments/assets/a6ef4bb1-6c53-40df-8d7b-9b0ca174c72b)
+if you face an error while executing ./tcl_tool , use the following command that provides necessary permissions:
+```
+chmod -R 777 tcl_tool
+```
+This is the case when user enters wrong csv file name:
+![Screenshot 2025-05-07 at 10 30 38 PM](https://github.com/user-attachments/assets/1acd147c-d104-4180-8bc6-e5abd9e2a4e3)
+
+## Module 2: Variable Creation and Processing Constraints from CSV: 
+
+- Auto creation of variable: 
+![image](https://github.com/user-attachments/assets/f5123ed4-78ad-437b-9f89-4694a68e6740)
+- Variables successfully created in the tcl_tool.tcl script and the directories as set. 
+![Created Variables](https://github.com/user-attachments/assets/631502ca-3844-4b0c-be64-6b73072c3a04)
+- Checking if the directories exist or not:
+![Checking id the directories exist or not](https://github.com/user-attachments/assets/6558eca3-d810-47fd-94f2-7be18f7acbac)
+- Error if the file is in the wrong directory:
+![Error if not right directory](https://github.com/user-attachments/assets/065733c9-6906-402a-895f-28c4cd77e858)
+The process of converting csv file to the matrix and count the number of rows and columns:
+![image](https://github.com/user-attachments/assets/73664e17-a80d-412c-a4fe-b09bb6ffa968)
+
+## Module 3: Standard Design Constraints (SDC Creation):
+Standard Design Constraints is a Tcl-based format used to define timing, clock, and design constraints for synthesis and  pre - static timing analysis (STA).
+Here is a basic template of the SDC:
+```
+create_clock
+set_input_delay
+set_output_delay
+set_driving_cell
+set_load
+set_false_path
+set_multicycle_path
+set_clock_uncertainty
+set_clock_latency
+```
+Since we have all the information in the sdc.csv file, it is converted to a SDC script that will be useful for the further process like synthesis:
+- Screenshot of SDC creation in Linux:
+![SDC Constarints Created](https://github.com/user-attachments/assets/6f4c5b00-0318-40cb-8d83-b569cb500f0b)
+- Sample Code snippet of SDC Creation:
+![Code snippet of Generated SDC](https://github.com/user-attachments/assets/8058baf0-99ca-4003-b529-d85401b61c85)
 
