@@ -62,6 +62,24 @@ set_multicycle_path
 set_clock_uncertainty
 set_clock_latency
 ```
+- Clock creation: 
+![Screenshot 2025-05-08 at 9 49 49 PM](https://github.com/user-attachments/assets/46f2c29b-f50d-4bde-9fb4-a35c32b1c35f)
+![Screenshot 2025-05-08 at 9 50 13 PM](https://github.com/user-attachments/assets/37b8d792-7c17-4b8f-a28f-8621f70a41c9)
+- Inputs: 
+ Reading:
+![Screenshot 2025-05-08 at 10 16 43 PM](https://github.com/user-attachments/assets/c75e983c-fde0-4efd-9472-8beee4fd6189)
+![Screenshot 2025-05-08 at 10 19 18 PM](https://github.com/user-attachments/assets/255c5844-1eee-4cc8-8909-5c6e26f68a47)
+After Uniquifying and sorting:
+![Screenshot 2025-05-08 at 10 22 01 PM](https://github.com/user-attachments/assets/bed7e8ac-beaf-487d-af78-79f3e840d21e)
+After Joining:
+![Screenshot 2025-05-08 at 10 24 21 PM](https://github.com/user-attachments/assets/f3fff352-03d8-42bc-a882-e28e4f3905bc)
+Print statements (puts) used:
+![Screenshot 2025-05-08 at 10 25 40 PM](https://github.com/user-attachments/assets/6f21cd99-699d-4047-ba62-81534bb9fe62)
+
+Categorizing as Single Bit or Multi Bit: 
+![Screenshot 2025-05-08 at 10 28 45 PM](https://github.com/user-attachments/assets/55b20e1f-c38c-4025-a409-9c565b52db4d)
+![Screenshot 2025-05-08 at 10 31 31 PM](https://github.com/user-attachments/assets/2dc56add-f11b-4051-9019-095ff52fb261)
+
 Since we have all the information in the sdc.csv file, it is converted to a SDC script that will be useful for the further process like synthesis:
 - Screenshot of SDC creation in Linux:
 ![SDC Constarints Created](https://github.com/user-attachments/assets/6f4c5b00-0318-40cb-8d83-b569cb500f0b)
