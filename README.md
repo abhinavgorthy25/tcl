@@ -62,6 +62,10 @@ set_multicycle_path
 set_clock_uncertainty
 set_clock_latency
 ```
+### Algorithm used: 
+From the constarints matrix, a rectangular search spacer is created and then the names along the values are grepped (searched) and then extracted to the SDC format. 
+![image](https://github.com/user-attachments/assets/1b060b3d-13de-4ac0-adac-dbb0f3b24432)
+
 - Clock creation: 
 ![Screenshot 2025-05-08 at 9 49 49 PM](https://github.com/user-attachments/assets/46f2c29b-f50d-4bde-9fb4-a35c32b1c35f)
 ![Screenshot 2025-05-08 at 9 50 13 PM](https://github.com/user-attachments/assets/37b8d792-7c17-4b8f-a28f-8621f70a41c9)
