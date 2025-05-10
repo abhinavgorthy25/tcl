@@ -89,7 +89,7 @@ Since we have all the information in the sdc.csv file, it is converted to a SDC 
 ![SDC Constarints Created](https://github.com/user-attachments/assets/6f4c5b00-0318-40cb-8d83-b569cb500f0b)
 - Sample Code snippet of SDC Creation:
 ![Code snippet of Generated SDC](https://github.com/user-attachments/assets/8058baf0-99ca-4003-b529-d85401b61c85)
-## Module 4: YOSYS Synthesis:
+## Module 4: YOSYS Synthesis
 Yosys is an open source tool that can synthesize the RTL design (Verilog or VHDL) into gate - level netlist based on different technology.
 ![image](https://github.com/user-attachments/assets/7c2e5aa7-38a1-4311-9b01-a53cf93cb620)
 The inputs for Synthesis are: 
