@@ -89,4 +89,44 @@ Since we have all the information in the sdc.csv file, it is converted to a SDC 
 ![SDC Constarints Created](https://github.com/user-attachments/assets/6f4c5b00-0318-40cb-8d83-b569cb500f0b)
 - Sample Code snippet of SDC Creation:
 ![Code snippet of Generated SDC](https://github.com/user-attachments/assets/8058baf0-99ca-4003-b529-d85401b61c85)
+## Module 4: YOSYS Synthesis:
+Yosys is an open source tool that can synthesize the RTL design (Verilog or VHDL) into gate - level netlist based on different technology.
+![image](https://github.com/user-attachments/assets/7c2e5aa7-38a1-4311-9b01-a53cf93cb620)
+The inputs for Synthesis are: 
+- RTL (.v, vhdl)
+- Timing Libraries (.lib files)
+- SDC
+- Technology files (for technology mapping)
+- Unified Power Format (if needed for power analysis)
+YOSYS creates technology dependent DAGs (Directed Acyclic Graphs) and maps to the technology file and generates a minimized gate-level netlist using standard cells.
+Here, there is an example for MEMORY WRITE at the first positive edge of the clock
+![image](https://github.com/user-attachments/assets/f732b951-e382-4634-bf1e-a77243a99c98)
+Memory Read at the second positive edge of the clock
+![image](https://github.com/user-attachments/assets/a2adfba7-ad73-4753-b331-0f7d517e9e3a)
+Hierarchical check: Analyses and verifies the design's hierarchical structure:
+![image](https://github.com/user-attachments/assets/63833b7f-ee0c-42d9-95ae-ac0527706226)
+![image](https://github.com/user-attachments/assets/4a59f19b-a6ab-4eb1-a17c-12ae13b99752)
+- Checking the error - Error Flag is Zero
+![image](https://github.com/user-attachments/assets/1ebac623-2ccd-49ff-bb10-10278bf0d16b)
+We are creating an error in the verilog file
+![image](https://github.com/user-attachments/assets/c9620264-aa03-4022-a66b-bebf3d3c0953)
+Error flag is 1
+![image](https://github.com/user-attachments/assets/6906314e-1656-419a-9cfd-39eff35a7bc7)
+We can grep out the error message directly in the tcl from the log file
+![image](https://github.com/user-attachments/assets/753bb1f2-7dbe-4dcd-b08a-0d8a9165e7b9)
+Repeat the same by creating an error
+![image](https://github.com/user-attachments/assets/30023dc5-fc9a-43d0-84a0-f754623965fc)
+
+
+
+
+  
+  
+
+
+
+
+
+
+
 
