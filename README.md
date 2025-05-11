@@ -154,7 +154,7 @@ Creation of timing report from SDC to a Opentimer compatible format:
 ![image](https://github.com/user-attachments/assets/1e72f032-cdab-4c6c-8c94-098f4a829ba1)
 .conf file:
 ![image](https://github.com/user-attachments/assets/49917845-cc4b-4a52-a108-912cd6b7f7bc)
-Quality of Results (QoR):
+### Quality of Results (QoR):
 - vertical QoR generation:
   ![image](https://github.com/user-attachments/assets/768515ec-75fd-4577-b745-aeb586dfc10d)
 - Horizontal QoR generation:
