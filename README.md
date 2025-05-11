@@ -160,6 +160,15 @@ Quality of Results (QoR):
 - Horizontal QoR generation:
   ![image](https://github.com/user-attachments/assets/4d1b23b3-d127-4c48-93cb-ba5ba9cad91e)
 
+## Conclusion:
+Finally, I was able to successfully automate the process for Synthesis, STA and generate a quality report using TCL BOX
+![image](https://github.com/user-attachments/assets/79eb8686-0f59-4c26-a6e9-97089a1d8ff2)
+
+## Acknowledgements: 
+I extend my sincere gratitude to Kunal Ghosh and the VSD team for their guidance.
+Github: 
+https://github.com/Visruat/VSD-TCL.git
+
 
 
 
