@@ -117,14 +117,48 @@ We can grep out the error message directly in the tcl from the log file
 Repeat the same by creating an error
 ![image](https://github.com/user-attachments/assets/30023dc5-fc9a-43d0-84a0-f754623965fc)
 
-
-
-
-  
-  
-
-
-
+Module 5: Synthesis and Creating a Script for OpenTimer and perform STA Analysis and Generation of Quality of Results (QoR)
+Completed Synthesis Successfully.
+![image](https://github.com/user-attachments/assets/ab4aeb90-909d-4e54-96f3-baa279850ed7)
+Here, the '*' generated in the synthesized verilog file cannot be used for Opentimer, therefore after necessary scripting the unnecessary commands are removed. 
+Before removing:
+![image](https://github.com/user-attachments/assets/b8eb6b87-812e-416f-b2c8-e4cb7c9fb1cf)
+After removing:
+![image](https://github.com/user-attachments/assets/38806fc5-9342-4e25-9d9f-d98688adc1e4)
+### Introduction to Procs
+![image](https://github.com/user-attachments/assets/dcf5a7fd-9f64-477b-9fa5-8d7d3e5415de)
+The proc command creates a new Tcl procedure named name, replacing any existing command or procedure there may have been by that name. It is similar to the concept of functions in programming languages. 
+We have used various procs in our scripting: 
+1. reopenStdout.proc and set_multi_cpu_usage.proc:
+These procs are used for opening a new window and closes the existing log file and also use multi-threading
+  ![image](https://github.com/user-attachments/assets/6312abf1-746b-484c-bf1c-a320af9bd91d)
+Executing these procs in the test.tcl and understanding the arguements passed to it in the tcl script
+![image](https://github.com/user-attachments/assets/d6a4b373-b21e-40ff-8303-609749c11344)
+![image](https://github.com/user-attachments/assets/e56c6b51-df34-45f7-a611-1a12a6bf908d)
+Executing these in the main script provides a .conf file which is crucial for the Opentimer tool for STA
+![image](https://github.com/user-attachments/assets/53ab8c84-54cb-4800-9cd3-b0c340c3fea5)
+conf file:
+![image](https://github.com/user-attachments/assets/65eefda9-a6b9-4a24-8333-22a058b7f8c7)
+2. read_lib.proc:
+This is used to read the early lib and late lib for Opentimer
+![image](https://github.com/user-attachments/assets/032cb452-dee7-47c5-a49c-d8d4bf6d8b5c)
+.conf file:
+![image](https://github.com/user-attachments/assets/0084c3a4-11b2-428b-bbf8-8dcbacf6edea)
+3.  read_verilog.proc:
+![image](https://github.com/user-attachments/assets/826bf57c-30fd-4c0c-b155-ae47cb581d48)
+.conf file:
+![image](https://github.com/user-attachments/assets/a83c36c6-2a28-49b7-a93e-a6dafb9b85a2)
+4. read_sdc.proc:
+ The read_sdc function is a substantial function file that will be divided into sections. This approach is employed to convert the sdc file into OpenTimer format by grepping the statements in the .proc file ![image](https://github.com/user-attachments/assets/c44afef7-12dc-499c-b26c-d20565e9341d)
+Creation of timing report from SDC to a Opentimer compatible format:
+![image](https://github.com/user-attachments/assets/1e72f032-cdab-4c6c-8c94-098f4a829ba1)
+.conf file:
+![image](https://github.com/user-attachments/assets/49917845-cc4b-4a52-a108-912cd6b7f7bc)
+Quality of Results (QoR):
+- vertical QoR generation:
+  ![image](https://github.com/user-attachments/assets/768515ec-75fd-4577-b745-aeb586dfc10d)
+- Horizontal QoR generation:
+  ![image](https://github.com/user-attachments/assets/4d1b23b3-d127-4c48-93cb-ba5ba9cad91e)
 
 
 
