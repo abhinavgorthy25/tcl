@@ -171,7 +171,7 @@ Github:
 https://github.com/Visruat/VSD-TCL.git
 
 ## Certificate of Completition
-![5_VSD TCL Wokrshop Certificate 2025VSD-TCL Workshop Certificate](https://github.com/user-attachments/assets/58f24847-4213-4e2d-a0d2-fc99703750c3)
+![5_VSD TCL Wokrshop Certificate 2025VSD-TCL Workshop Certificate-1](https://github.com/user-attachments/assets/480dcb9d-0fe0-4f90-922c-b0ae67da29e9)
 
 
 
