@@ -98,6 +98,7 @@ The inputs for Synthesis are:
 - SDC
 - Technology files (for technology mapping)
 - Unified Power Format (if needed for power analysis)
+
 YOSYS creates technology dependent DAGs (Directed Acyclic Graphs) and maps to the technology file and generates a minimized gate-level netlist using standard cells.
 Here, there is an example for MEMORY WRITE at the first positive edge of the clock
 ![image](https://github.com/user-attachments/assets/f732b951-e382-4634-bf1e-a77243a99c98)
@@ -117,7 +118,7 @@ We can grep out the error message directly in the tcl from the log file
 Repeat the same by creating an error
 ![image](https://github.com/user-attachments/assets/30023dc5-fc9a-43d0-84a0-f754623965fc)
 
-Module 5: Synthesis and Creating a Script for OpenTimer and perform STA Analysis and Generation of Quality of Results (QoR)
+## Module 5: Synthesis and Creating a Script for OpenTimer and perform STA Analysis and Generation of Quality of Results (QoR)
 Completed Synthesis Successfully.
 ![image](https://github.com/user-attachments/assets/ab4aeb90-909d-4e54-96f3-baa279850ed7)
 Here, the '*' generated in the synthesized verilog file cannot be used for Opentimer, therefore after necessary scripting the unnecessary commands are removed. 
@@ -169,6 +170,8 @@ I extend my sincere gratitude to Kunal Ghosh and the VSD team for their guidance
 Github: 
 https://github.com/Visruat/VSD-TCL.git
 
+## Cretificate of Completition
+[5_VSD TCL Wokrshop Certificate 2025VSD-TCL Workshop Certificate.pdf](https://github.com/user-attachments/files/20256212/5_VSD.TCL.Wokrshop.Certificate.2025VSD-TCL.Workshop.Certificate.pdf)
 
 
 
